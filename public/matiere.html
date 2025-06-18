@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajout d'une Matière</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+
+    <h2 class="text-center">Ajout d'une Matière</h2>
+
+    <form method="post" action="matiere.php" class="card p-4">
+        <div class="mb-3">
+            <label class="form-label">Nom de la matière :</label>
+            <select name="nom_matiere" class="form-select" required>
+                <option value="">Sélectionnez une matière</option>
+
+                <!-- Matières pour Génie Logiciel -->
+                <optgroup label="Génie Logiciel">
+                    <option value="Algorithmique">Algorithmique</option>
+                    <option value="Programmation Web">Programmation Web</option>
+                    <option value="Bases de Données">Bases de Donnees</option>
+                    <option value="Analyse et Conception">Analyse et Conception</option>
+                    <option value="Développement Mobile">Developpement Mobile</option>
+                </optgroup>
+
+                <!-- Matières pour Informatique -->
+                <optgroup label="Informatique">
+                    <option value="Architecture des Ordinateurs">Architecture des Ordinateurs</option>
+                    <option value="Systèmes d'Exploitation">Systemes d'Exploitation</option>
+                    <option value="Sécurité Informatique">Sécurite Informatique</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Big Data">Big Data</option>
+                </optgroup>
+
+                <!-- Matières pour Réseaux -->
+                <optgroup label="Réseaux">
+                    <option value="Administration Réseaux">Administration Reseaux</option>
+                    <option value="Protocoles Réseaux">Protocoles Reseaux</option>
+                    <option value="Sécurité Réseaux">Sécurite Reseaux</option>
+                    <option value="Télécommunications">Telecommunications</option>
+                    <option value="Virtualisation">Virtualisation</option>
+                </optgroup>
+
+                <!-- Matières pour Génie Civil -->
+                <optgroup label="Génie Civil">
+                    <option value="Résistance des Matériaux">Résistance des Materiaux</option>
+                    <option value="Topographie">Topographie</option>
+                    <option value="Structures Béton Armé">Structures Beton Arme</option>
+                    <option value="Dessin Technique">Dessin Technique</option>
+                    <option value="Mécanique des Fluides">Mecanique des Fluides</option>
+                </optgroup>
+
+                <!-- Matières pour Comptabilité -->
+                <optgroup label="Comptabilité">
+                    <option value="Gestion Financière">Gestion Financiere</option>
+                    <option value="Comptabilité Générale">Comptabilité Generale</option>
+                    <option value="Audit et Contrôle">Audit et Contrele</option>
+                    <option value="Fiscalité">Fiscalité</option>
+                    <option value="Analyse Financière">Analyse Financiere</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Filière :</label>
+            <select name="filiere_id" class="form-select" required>
+                <option value="">Sélectionnez une filière</option>
+                <option value="2">Génie Logiciel</option>
+                <option value="3">Informatique</option>
+                <option value="4">Réseaux</option>
+                <option value="5">Génie Civil</option>
+                <option value="6">Comptabilité</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Ajouter Matière</button>
+    </form>
+
+</body>
+</html>
