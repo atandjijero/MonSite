@@ -1,7 +1,7 @@
 <?php
-$conn = pg_connect("host=localhost dbname=resultat user=jd password=jd");
+$conn = pg_connect(getenv("DATABASE_URL"));
 
 if (!$conn) {
-die("Pas de connexion à postgres");
+  die("Échec de la connexion à PostgreSQL 😞");
 }
 ?>
